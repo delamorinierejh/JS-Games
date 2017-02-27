@@ -1,0 +1,135 @@
+body {
+  text-align: center;
+  font-family: Helvetica;
+  color: black;
+  background: #445588;
+}
+
+ul, li {
+  list-style: none;
+}
+
+h1 {
+  color: white;
+  font-size: 46px;
+  margin: 12px 0;
+  text-shadow: 2px 2px black;
+}
+
+.game-board {
+  margin: 0 auto;
+  background-color: grey;
+  border: 2px ridge black;
+  height: 525px;
+  width: 820px;
+}
+
+
+.score-board {
+  border: 2px solid black;
+  background-color: #acb0c1;
+  height: 100px;
+  width: 800px;
+  margin: 5px auto;
+}
+
+.reset-button {
+  margin: 0 auto;
+  height: 99px;
+  width: 266px;
+  background: #707b70;
+  color: white;
+  font-size: 30px;
+}
+
+.reset-button:hover {
+  background: #445588;
+}
+
+.mines, .flags-down {
+  float: left;
+  height: 100px;
+  width: 265px;
+  background: #bab4b4;
+  border-right: 2px solid black;
+}
+
+.flags-down {
+  float: right;
+  border-left: 2px solid black;
+  border-right: none;
+}
+
+.scoreheader {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.mine-display, .flag-display {
+  height: 60px;
+  width: 140px;
+  background: grey;
+  border: 2px solid black;
+  margin: 0 auto;
+  line-height: 60px;
+  font-size: 40px;
+  color: #cdd4ea;
+  text-shadow: 1px 1px black;
+}
+
+.game-grid {
+  height: 400px;
+  width: 800px;
+  background: white;
+  margin: 6px auto;
+  border: 2px solid black;
+}
+
+.grid-square, .grid-button {
+  height: 23px;
+  width: 23px;
+  border: 1px solid black;
+  float: left;
+  color: black;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: bold;
+}
+
+.grid-button {
+  border: none;
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+.grid-square.color-1{
+  color: red;
+}
+
+.grid-square.color-2{
+  color: blue;
+}
+
+.grid-square.color-3{
+  color: green;
+}
+
+.grid-square.color-4{
+  color: orange;
+}
+
+.grid-square.color-5{
+  color: purple;
+}
+
+.grid-square.color-6{
+  color: indigo;
+}
+
+.grid-square.color-7{
+  color: brown;
+}
+
+.grid-square.color-8{
+  color: teal;
+}

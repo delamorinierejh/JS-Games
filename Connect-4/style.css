@@ -1,0 +1,76 @@
+body {
+  background-color: #dfdee7;
+  text-align: center;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+ul,li {
+  list-style: none;
+}
+
+button {
+  height: 40px;
+  width: 120px;
+  font-size: 20px;
+  colour: white;
+  border: 2px solid black;
+  background: #ababab;
+  transition: all 0.3s;
+  font-family: monospace;
+}
+
+button:hover {
+  background: green;
+  color: white;
+  transition: all 0.3s;
+}
+
+h1 {
+  text-shadow: 2px 2px black;
+  color: #978fbf;
+  font-size: 40px;
+  margin: 10px auto;
+  /*background-color: #888;*/
+  margin: 10px 200px;
+}
+
+.game-board {
+  height: 480px;
+  width: 720px;
+  background: #2e2e6a;
+  padding: 10px 10px 20px 10px;
+  margin: 10px auto;
+  box-shadow: 4px 4px black;
+}
+
+.game-grid {
+  width: inherit;
+  height: inherit;
+}
+
+.hole {
+  border: 2px solid #acacc2;
+  background-color: #dfdee7;
+  width: 32px;
+  height: 32px;
+  margin: 3px;
+  padding: 19px;
+  border-radius: 100%;
+  float: left;
+}
+
+.Red {
+  background-color: red;
+  transition: all 0.5s;
+}
+
+.Yellow {
+  background-color: yellow;
+  transition: all 0.5s;
+}
+
+.Orange {
+  background-color: orange;
+  transition: all 0.5s;
+}

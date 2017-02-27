@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mine Sweeper</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="minesweep.js"></script>
+  </head>
+  <body>
+    <h1 id="heading">Mine Sweeper</h1>
+    <div class="game-board">
+      <div class="score-board">
+        <button type="button" class="reset-button" id="reset">New game</button>
+        <div class="mines">
+          <h3 class="scoreheader" >Mines Hidden</h3>
+          <div class="mine-display" id="mine-display"></div>
+        </div>
+        <div class="flags-down">
+          <h3 class="scoreheader" >Flags Remaining</h3>
+          <div class="flag-display" id="flag-display"></div>
+        </div>
+      </div>
+      <div class="game-grid">
+        <ul id="grid" class="grid">
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
