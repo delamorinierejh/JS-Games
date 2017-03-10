@@ -12,6 +12,7 @@ Snake.init = function(){
   this.intervalPeriod   = 80;
   this.score            = 0;
   this.snake            = [];
+  this.iCanPress        = true;
   if (this.isFirstGame){
     this.addKeyStrokes();
   }
@@ -23,11 +24,19 @@ Snake.addKeyStrokes = function(){
 };
 
 Snake.changeDirection = function(e){
-  if (e.key !== Snake.direction){
+  if (e.key !== Snake.direction && Snake.iCanPress){
     if (((e.key === 'ArrowRight' || e.key === 'ArrowLeft') && (Snake.direction === 'ArrowUp' || Snake.direction === 'ArrowDown'))||((e.key === 'ArrowUp' || e.key === 'ArrowDown') && (Snake.direction === 'ArrowLeft' || Snake.direction === 'ArrowRight'))){
       Snake.direction = e.key;
+      Snake.pausePress();
     }
   }
+};
+
+Snake.pausePress = function(){
+  Snake.iCanPress = false;
+  setTimeout(function(){
+    Snake.iCanPress = true;
+  }, 80);
 };
 
 Snake.buildBoard = function(){
@@ -63,6 +72,9 @@ Snake.renderSnake = function(){
 };
 
 Snake.updateSnake = function(){
+  if (!Snake.appleOnBoard){
+    setTimeout(Snake.addApple, (Snake.intervalPeriod*2));
+  }
   var newBlock;
   if(!Snake.addABlock){
     Snake.snake[0].className = 'grid-square';
@@ -79,7 +91,7 @@ Snake.updateSnake = function(){
   switch(Snake.direction){
     case 'ArrowLeft':
       newBlock = Snake.index - 1;
-      if(newBlock%Snake.boardWidth === this.boardWidth-1){
+      if(newBlock%Snake.boardWidth === this.boardWidth-1 || newBlock < 0){
         newBlock += Snake.boardWidth;
       }
       break;
@@ -109,7 +121,6 @@ Snake.updateSnake = function(){
     Snake.score++;
     Snake.addABlock = true;
     Snake.appleOnBoard = false;
-    setTimeout(Snake.addApple, (Snake.intervalPeriod*2));
   }
 };
 
@@ -144,7 +155,6 @@ Snake.displayLoss = function(){
   var whereToStartScore = scoreIndex - Math.floor(score.length/2) - score.length - 2;
   for (var i = 0; i < message.length; i++) {
     Snake.squares[whereToStartMessage+i].innerText = message[i];
-    console.log(Snake.squares[whereToStartMessage+i]);
   }
   for (var j = 0; j < score.length; j++) {
     Snake.squares[whereToStartScore+j].innerText = score[j];
