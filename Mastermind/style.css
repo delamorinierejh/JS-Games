@@ -1,0 +1,115 @@
+body {
+  background: #227656;
+  font-family: monospace;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin: 10px 0;
+  color: white;
+}
+
+.game-board {
+  height: 460px;
+  width: 240px;
+  background: brown;
+  border: 2px solid black;
+  margin: 20px auto;
+  padding: 5px;
+}
+
+.row {
+  float: left;
+  height: 50px;
+  width: 320px;
+  /*border: 1px solid black;*/
+}
+
+.peg {
+  border: 1px solid black;
+  height: 38px;
+  width: 38px;
+  float: left;
+  border-radius: 50px;
+}
+
+.solution, .guess {
+  height: 40px;
+  width: 190px;
+  margin: 3px;
+  /*border: 1px solid black;*/
+  float: left;
+}
+
+.solution {
+  width: 240px;
+}
+
+.score {
+  margin: 3px;
+  width: 44px;
+  height: 44px;
+  /*border: 1px solid black;*/
+  float: left;
+}
+
+.score-peg {
+  border: 1px solid black;
+  height: 18px;
+  width: 18px;
+  float: left;
+  margin: 1px;
+  border-radius: 50px;
+  background: #b68686;
+}
+
+.solution-peg {
+  background: grey;
+  border-radius: 50px;
+  margin: 0 3px;
+  line-height: 38px;
+  font-size: 20px;
+}
+
+.guess-peg {
+  border-radius: 50px;
+  background: #b68686;
+  margin: 0 3px;
+}
+
+.clear {
+  margin: 10px 0 0 5px;
+  background: transparent;
+  border: 2px solid white;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 16px;
+  color: white
+}
+
+.clear:hover {
+  background: white;
+  color: #227656;
+  cursor: pointer;
+}
+
+.colour-picker {
+  height: 50px;
+  width: 300px;
+  border: 2px solid black;
+  margin: 10px auto;
+}
+
+.colour {
+  height: 48px;
+  width: 48px;
+  border: 1px solid black;
+  float: left;
+}
+
+.colour:hover {
+  cursor: pointer;
+}
