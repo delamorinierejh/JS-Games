@@ -71,7 +71,7 @@ h1 {
   border-radius: 50px;
   margin: 0 3px;
   line-height: 38px;
-  font-size: 20px;
+  font-size: 24px;
 }
 
 .guess-peg {
@@ -98,16 +98,18 @@ h1 {
 
 .colour-picker {
   height: 50px;
-  width: 300px;
-  border: 2px solid black;
+  width: 372px;
+  /*border: 2px solid black;*/
   margin: 10px auto;
 }
 
 .colour {
   height: 48px;
   width: 48px;
-  border: 1px solid black;
+  border: 2px solid black;
   float: left;
+  margin: 0 5px;
+  border-radius: 50px;
 }
 
 .colour:hover {
