@@ -25,7 +25,6 @@ h1 {
   float: left;
   height: 50px;
   width: 320px;
-  /*border: 1px solid black;*/
 }
 
 .peg {
@@ -40,7 +39,6 @@ h1 {
   height: 40px;
   width: 190px;
   margin: 3px;
-  /*border: 1px solid black;*/
   float: left;
 }
 
@@ -52,7 +50,6 @@ h1 {
   margin: 3px;
   width: 44px;
   height: 44px;
-  /*border: 1px solid black;*/
   float: left;
 }
 
@@ -99,7 +96,6 @@ h1 {
 .colour-picker {
   height: 50px;
   width: 372px;
-  /*border: 2px solid black;*/
   margin: 10px auto;
 }
 

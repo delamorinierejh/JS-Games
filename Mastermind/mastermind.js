@@ -10,7 +10,6 @@ MasterMind.init = function(){
   this.guessGrid    = document.getElementById('guess-grid');
   this.setUpGuessGrid();
   this.setUpSolution();
-
 };
 
 MasterMind.setUpSolution = function(){
