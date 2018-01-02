@@ -1,0 +1,99 @@
+/*
+RESET CSS
+*/
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+body {
+  text-align: center;
+  background-color: #2d5f5a;
+  font-family: monospace;
+}
+
+#game-over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 100;
+}
+
+h1 {
+  margin: 16px 0 12px;
+  font-size: 32px;
+  color: orange;
+}
+
+h2 {
+  color: orange;
+  font-size: 64px;
+  margin-top: calc(50vh - 64px);
+}
+
+h3 {
+  margin: 0 36px;
+  margin-top: 20px;
+  font-size: 22px;
+  color: orange;
+  display: inline-block;
+}
+
+
+.game-container {
+  margin: 0 auto;
+  width: 800px;
+  height: 540px;
+  background-color: #273a38;
+  border-radius: 10px;
+  border: 3px ridge #2d5e59;
+  position: relative;
+}
+
+.next-up {
+  height: 120px;
+  width: 150px;
+  position: absolute;
+  top: 170px;
+  left: 60px;
+  border-radius: 5px;
+  border: 2px ridge #2d5e59;
+  background-color: #4a4141;
+}
+
+.next-up p {
+  margin-top: 16px;
+  font-size: 20px;
+  color: orange;
+}
+
+#next-up-img {
+  display: block;
+  height: 42px;
+  margin: 12px auto;
+}
+
+.inner-game-container {
+  border: 4px ridge #484545;
+  width: 200px;
+  height: 400px;
+  margin: 42px auto 0;
+  position: relative;
+  overflow: hidden;
+}
+
+#game-grid {
+  width: 200px;
+  height: 480px;
+  position: absolute;
+  top: -80px;
+  background-color: #251f1f;
+}
+
+.grid-cell {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #484545b5;
+  float: left;
+}

@@ -89,7 +89,7 @@ MasterMind.rowFinished = function(status=false){
   } else {
     MasterMind.currentGuess = 1;
     MasterMind.currentRow++;
-    if(MasterMind.currentRow < 10){
+    if(MasterMind.currentRow < 9){
       MasterMind.resetClearButtons();
     } else {
       MasterMind.gameInPlay = false;
